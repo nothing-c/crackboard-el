@@ -17,14 +17,13 @@
 (defun crackboard (k)
   "Start crackboard session with key k"
   (interactive "sKey: ")
-  )
-
-(defun crackboard-fmt (k l)
-  "Format key and language into timestamped JSON to send as heartbeat"
+  (setq crackboard-session-key k)
+  ;; do something else
   )
 
 (defun crackboard-filetype ()
   "Locate filetype of current buffer (hacky rn)"
+  (replace-regexp-in-string "-mode$" "" (symbol-name major-mode)))
 
 
 ;; Functionality: track typing, track saving
