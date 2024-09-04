@@ -9,9 +9,9 @@
   (let ((url-request-method "POST")
 	(url-request-extra-headers
 	 '(("Content-Type" . "application/json")))
-	(url-request-data (json-encode '(("timestamp" . (format-time-string "%Y-%m-%dT%TZ" (current-time) t)) ;; Timestamp, Zulu
-		    ("session_key" . crackboard-session-key)
-		    ("language_name" . (crackboard-filetype))))))
+	(url-request-data (json-encode `(("timestamp" . ,(format-time-string "%Y-%m-%dT%T.%3NZ" (current-time) t)) ;; Timestamp, Zulu
+		    ("session_key" . ,crackboard-session-key)
+		    ("language_name" . ,(crackboard-filetype))))))
     (url-retrieve crackboard-heartbeat-endpoint (lambda (status)
 						       (message "Status %s" status))))) ;; temporary while I troubleshoot
 ;; TODO: error handling
@@ -40,3 +40,4 @@
   ;; add hooks
   (add-hook 'after-save-hook 'crackboard-save)
   (add-hook 'after-change-functions 'crackboard-change))
+
