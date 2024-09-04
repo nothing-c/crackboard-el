@@ -10,6 +10,4 @@ Better error handling for heartbeats
 
 Better messaging for success/fail heartbeat
 
-Figure out why I'm only getting 400s on heartbeats
-
 =cut
