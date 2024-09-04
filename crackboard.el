@@ -13,7 +13,7 @@
 		    ("session_key" . crackboard-session-key)
 		    ("language_name" . (crackboard-filetype))))))
     (url-retrieve crackboard-heartbeat-endpoint (lambda (status)
-						       (message "Status %s" status)))))
+						       (message "Status %s" status))))) ;; temporary while I troubleshoot
 ;; TODO: error handling
 
 (defun crackboard-filetype ()
