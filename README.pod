@@ -1,0 +1,15 @@
+=pod
+
+=head1 L<Crackboard|https://crackboard.dev/> for Emacs
+
+Because why let VSCode and Neovim have all the fun?
+
+=head2 TODOs
+
+Better error handling for heartbeats
+
+Better messaging for success/fail heartbeat
+
+Figure out why I'm only getting 400s on heartbeats
+
+=cut
