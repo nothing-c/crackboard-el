@@ -4,6 +4,18 @@
 
 Because why let VSCode and Neovim have all the fun?
 
+=head2 Installation
+
+Throw crackboard.el into your load-path, then add the following to your init.el:
+
+C<(load "crackboard.el")>
+
+C<(crackboard)>
+
+This I<does> mean you'll be prompted for your session key at startup, so if you want you can leave the second part out and just run it via M-x crackboard
+
 =head2 TODOs
+
+Shutdown function?
 
 =cut
