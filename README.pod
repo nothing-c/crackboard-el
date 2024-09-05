@@ -6,8 +6,4 @@ Because why let VSCode and Neovim have all the fun?
 
 =head2 TODOs
 
-Better error handling for heartbeats
-
-Better messaging for success/fail heartbeat
-
 =cut
